@@ -1,0 +1,15 @@
+# Ignore all zip files
+*.zip
+
+# Ignore Jupyter notebook checkpoints (highly recommended)
+.ipynb_checkpoints/
+
+# Ignore local configuration or data folders
+__pycache__/
+*.env
+
+processed_training/
+processed_training_setB/
+training/
+training_setB/
+
