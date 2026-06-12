@@ -1,3 +1,4 @@
 timestamp,version,params,epochs_run,auroc,auprc,f1_sepsis,recall_sepsis,precision_sepsis,threshold,notes
 2026-06-06 10:59,lstm_v2_bidirectional_attention,"{'dropout': 0.3, 'hidden_dim': 64, 'lr': 0.001, 'num_layers': 2}",11,0.6888,0.2138,0.335,0.2875,0.4014,0.912,"Bidirectional LSTM + attention, imbalance ratio 13.7:1"
 2026-06-07 10:49,lstm_v3,"{'dropout': 0.4, 'hidden_dim': 64, 'lr': 0.0001, 'num_layers': 2}",22,0.8638,0.5319,0.5881,0.4919,0.731,0.997,"Stratified split, StandardScaler, 48-step window, bidirectional+attention, lr=0.0001"
+2026-06-12 08:49,lstm_v4,"{'dropout': 0.4, 'hidden_dim': 64, 'lr': 0.0001, 'num_layers': 2}",21,0.8656,0.5587,0.4166,0.7007,0.2964,0.963,"Recall-constrained threshold (≥70%), bidirectional+attention, StandardScaler, 48-step window"
